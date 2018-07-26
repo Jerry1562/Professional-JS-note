@@ -45,7 +45,8 @@ student3.sayname();      //jerry
 
 为了避开这两个问题，需要换一种实现继承的方法。
 ## 借用构造函数技术
-思路很简单，在子类构造函数的内部直接调用父类构造函数
+*函数只不过是在特定环境中执行代码的对象  ————《JavaScript高级程序设计》*  
+这句话非常精辟，因此这种技术的思路很好理解，在子类构造函数的内部直接调用父类构造函数
 ```javascript
 function sub2(name,age,sex){
     superType.call(this,name,age);    //关键一步
@@ -117,7 +118,7 @@ student5.saysex();    //man
 ```javascript
 sub3.prototype = superType.prototype;
 ```
-这么做的问题在于，当我想增强子类`sub3`的原型的时候，会对父类的原型造成影响，特别是设置`constructor`属性时会重写父类原型的`constructor`属性。
+这么做的问题在于，当我想增强子类`sub3`的原型的时候，会对父类的原型造成破坏，特别是设置`constructor`属性时会重写父类原型的`constructor`属性。
 
 
 
