@@ -118,6 +118,7 @@ student5.saysex();    //man
 ```javascript
 sub3.prototype = superType.prototype;
 ```
+无非就是缩短原型链的的长度，思路会更直接简单，效率也会高一点。
 这么做的问题在于，当我想增强子类`sub3`的原型的时候，会对父类的原型造成破坏，特别是设置`constructor`属性时会重写父类原型的`constructor`属性。
 
 
