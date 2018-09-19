@@ -1,7 +1,7 @@
 ## Cookie的安全性问题
 ### 1. 为什么要使用Cookie？
 答：众所周知，http是一种无状态的协议，这会给传递用户登录状态等操作造成困扰，为了解决这个问题，人们引入了`Cookie`。`Cookie`是设置在http头部的一段信息，一般由服务器设置，保存在客户端中。当客户端发送请求时，就会在头部携带一段`Cookie`信息，向服务器表明自己的状态（身份）。
-### 2. Cookie有哪些配置项?
+### 2. Cookie有哪些配置项？
 + 名称：name
 + 值：value
 + 域名：domain
@@ -24,7 +24,7 @@
 + 服务端可以设置安全标志`secure`保证`Cookie`只有在使用`SSL`链接时才能传输。
 
 即使是这样，也不要在`Cookie`中储存敏感信息。
-### 6. 最后看看`Cookie`长什么样子：
+### 6. 最后看看`Cookie`长什么样子
 ```javascript
 "name=value; domain=.word.com; path=/; secure; HttpOnly"
 ```
