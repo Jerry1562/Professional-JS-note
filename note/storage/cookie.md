@@ -9,7 +9,7 @@
 + 失效时间：expires
 + 安全标志：secure
 
-除了name和value，其他属性都是服务器给浏览器的指示，客户端发给服务器的`Cookie`信息中不会携带这些内容，只会携带name和value。
+注意，除了name和value，其他属性都是服务器给浏览器的指示，客户端发给服务器的`Cookie`信息中不会携带这些内容，只会携带name和value。
 ### 3. Cookie的生存时间
 + 在默认状态下，`Cookie`的生存时间是从创建`Cookie`开始到会话关闭结束。
 + 在由服务器返回的http响应头`set-Cookie`中，也可以通过设置属性`expires`（失效时间）的值来指定`Cookie`的生存时间。
@@ -24,3 +24,8 @@
 + 服务端可以设置安全标志`secure`保证`Cookie`只有在使用`SSL`链接时才能传输。
 
 即使是这样，也不要在`Cookie`中储存敏感信息。
+### 6. 最后看看`Cookie`长什么样子：
+```javascript
+"name=value; domain=.word.com; path=/; secure; HttpOnly"
+```
+这是服务器发给客户端的`Cookie`,头部属性为`Set-Cookie`。
