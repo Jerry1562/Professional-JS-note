@@ -29,3 +29,7 @@
 "name=value; domain=.word.com; path=/; secure; HttpOnly"
 ```
 这是服务器发给客户端的`Cookie`,头部属性为`Set-Cookie`。
+### 7. 补充一点，关于`Cookie`的访问限制
++ 对`Cookie`的访问需要遵守“同源”策略。
++ 在“同源”的基础上，通过`Cookie`的配置项`domain`和`path`可以配置作用域。
++ 如果`domain`设置为父域，它的子域也可以访问。
