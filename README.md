@@ -2,9 +2,9 @@
 个人复习《JS高程》笔记
 ## 目录
 + ES部分
-  + [继承](https://github.com/Jerry1562/Professional-JS-note/blob/master/note/inherit.md)
-  + [私有变量](https://github.com/Jerry1562/Professional-JS-note/blob/master/note/private-variable.md)
+  + [继承](note/inherit.md)
+  + [私有变量](note/private-variable.md)
   + [事件循环](note/EventLoop.md)
 + 客户端储存
-  + [Cookie](https://github.com/Jerry1562/Professional-JS-note/blob/master/note/storage/cookie.md)
-  + [Stroage](https://github.com/Jerry1562/Professional-JS-note/blob/master/note/storage/Storage.md)
+  + [Cookie](note/storage/cookie.md)
+  + [Stroage](note/storage/Storage.md)
