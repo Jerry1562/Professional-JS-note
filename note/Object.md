@@ -77,7 +77,7 @@ prototypeObj.isPrototypeOf(object)
 ```javascript
 Object.create(proto[, propertiesObject])
 ```
-第二个参数可选，用于创建新对象属性,通过此种方式创建的属性，`configurable`、`enumerable`、`writable`的默认值均为`false`
+第二个参数可选，用于创建新对象属性,通过此种方式创建的属性，`configurable`、`enumerable`、`writable`的默认值均为`false`。
 #### [`hasOwnProperty()`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty) ####
 返回一个布尔值，指示对象自身（不包括原型链）属性中是否具有指定的属性。
 ```javascript
