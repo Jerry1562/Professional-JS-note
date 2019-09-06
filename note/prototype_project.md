@@ -3,7 +3,7 @@
 ![原型链示意图](../image/prototype_poject.png)
 ## 要点 ##
 1. 原型链指的是由实例的`_proto_`属性构成的链
-2. Foo.prototype = Object.prototype
+2. Foo.prototype._proto_ = Object.prototype
 3. Object.prototype.prototype = null
 ## instanceof ##
 语法：`object instanceof constructor`   
