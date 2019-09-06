@@ -4,7 +4,7 @@
 ## 要点 ##
 1. 原型链指的是由实例的`_proto_`属性构成的链
 2. Foo.prototype.\_proto_ = Object.prototype
-3. Object.prototype.prototype = null
+3. Object.prototype.\_proto_ = null
 ## instanceof ##
 语法：`object instanceof constructor`   
 `object`：要检测对象  
